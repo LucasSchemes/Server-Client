@@ -21,28 +21,28 @@ Fabio Marcon Siqueira - 23101751
 Desenvolver um sistema simples de cliente-servidor com sockets em Python, simulando o comportamento do comando ping, mas utilizando UDP como protocolo de transporte. Posteriormente, adaptar para TCP e executar em duas máquinas distintas.
 
 ## 💻 Execução da Aplicação TCP
--Servidor (TCP):
+- Servidor (TCP):
 
--Cliente (TCP):
+- Cliente (TCP):
 
 ## 🔧 Modificações para adaptar de UDP para TCP
 Troca do tipo de socket:
--UDP: socket.SOCK_DGRAM -> TCP: socket.SOCK_STREAM
+- UDP: socket.SOCK_DGRAM -> TCP: socket.SOCK_STREAM
 
--Modelo de comunicação:
+- Modelo de comunicação:
 UDP é sem conexão (sendto / recvfrom) -> TCP exige conexão (connect / accept / send / recv)
 
--Controle de fluxo:
+- Controle de fluxo:
 UDP não garante entrega, nem ordem. -> TCP garante entrega, ordem e confiabilidade — ideal para aplicações onde a perda de pacotes é inaceitável.
 
--Timeouts:
+- Timeouts:
 Ambos podem usar socket.settimeout(), mas o controle de falhas no TCP é gerenciado automaticamente.
 
 ## 📡 Testes entre duas máquinas
 Para testar a versão TCP entre duas máquinas:
 
--Servidor: execute em uma máquina (use IP local ou da rede)
+- Servidor: execute em uma máquina (use IP local ou da rede)
 
--Cliente: execute na outra, utilizando o IP do servidor como destino
+- Cliente: execute na outra, utilizando o IP do servidor como destino
 
--Verifique se ambas estão na mesma rede e não há bloqueios de firewall na porta escolhida.
+- Verifique se ambas estão na mesma rede e não há bloqueios de firewall na porta escolhida.
