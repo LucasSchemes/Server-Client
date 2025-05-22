@@ -1,5 +1,4 @@
-# Server-Client
-🛰️ Projeto Ping Cliente-Servidor em Python
+#🛰️ Projeto Ping Cliente-Servidor em Python
 Este repositório contém a implementação de uma aplicação de rede cliente-servidor utilizando sockets em Python, com comunicação baseada inicialmente em UDP e, posteriormente, em TCP. O objetivo principal é simular um programa ping personalizado, que envia mensagens do tipo "ping" do cliente ao servidor e recebe "pong" como resposta, medindo o tempo de ida e volta (RTT).
 
 👨‍💻 Desenvolvido por
