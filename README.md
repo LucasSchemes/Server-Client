@@ -46,3 +46,13 @@ Para testar a versão TCP entre duas máquinas:
 - Cliente: execute na outra, utilizando o IP do servidor como destino
 
 - Verifique se ambas estão na mesma rede e não há bloqueios de firewall na porta escolhida.
+
+## ✅ Requisitos
+- Python 3.x
+
+- Acesso a terminal/console
+
+- Conexão de rede entre as máquinas (no caso do teste TCP)
+
+## 🛠️ Porta Utilizada
+- A porta definida para a aplicação foi: 6969
